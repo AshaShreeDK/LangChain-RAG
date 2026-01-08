@@ -1,0 +1,8 @@
+IAM users must not be created for applications.
+All applications must use IAM roles for authentication.
+
+The principle of least privilege must be followed for all IAM policies.
+Wildcard permissions are not allowed in production environments.
+
+MFA is mandatory for all human users with console access.
+Access reviews must be conducted quarterly.

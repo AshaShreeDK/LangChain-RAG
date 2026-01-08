@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+
+# Environment variables
+.env
+
+# FAISS index (generated artifacts)
+faiss_index/
+
+# Chunk exports
+chunks.jsonl
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
+

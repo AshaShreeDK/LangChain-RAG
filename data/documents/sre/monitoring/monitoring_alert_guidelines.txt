@@ -1,0 +1,7 @@
+Critical services must have alerts configured for availability and latency.
+Alert thresholds must be reviewed periodically to avoid alert fatigue.
+
+Monitoring dashboards must be accessible to on-call engineers.
+Alerts should include clear runbook links where applicable.
+
+Silencing alerts without incident tracking is not permitted.

@@ -1,0 +1,7 @@
+A Sev-1 incident is defined as a complete service outage impacting customers.
+The on-call engineer must acknowledge a Sev-1 alert within 5 minutes.
+
+During active incidents, status updates must be communicated every 30 minutes.
+Incident mitigation should focus on service restoration before root cause analysis.
+
+A post-incident review must be conducted within 5 business days.

@@ -1,0 +1,7 @@
+Service Level Objectives (SLOs) must be defined for all customer-facing services.
+Service Level Agreements (SLAs) must align with defined SLOs.
+
+Error budgets must be tracked and reviewed regularly.
+Exceeding error budgets requires prioritization of reliability improvements.
+
+SLA breaches must be reported to stakeholders promptly.

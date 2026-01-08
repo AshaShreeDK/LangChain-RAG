@@ -1,0 +1,7 @@
+Access to production systems must be granted on a need-to-have basis.
+Temporary access must have an expiration date.
+
+All production access must be logged and monitored.
+Shared accounts are strictly prohibited.
+
+Production access reviews must be conducted quarterly.

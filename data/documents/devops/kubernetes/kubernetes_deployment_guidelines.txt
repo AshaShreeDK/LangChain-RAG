@@ -1,0 +1,8 @@
+All Kubernetes workloads must define resource requests and limits.
+Pods without resource limits are not permitted in production namespaces.
+
+Liveness and readiness probes must be configured for all services.
+Deployments must use rolling update strategies to avoid downtime.
+
+Secrets must be managed using Kubernetes Secrets or external secret managers.
+Direct embedding of secrets in manifests is prohibited.

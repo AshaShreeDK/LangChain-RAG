@@ -1,0 +1,7 @@
+All changes to production systems must follow the change management process.
+Emergency changes must be documented and reviewed after implementation.
+
+Change requests must include risk assessment and rollback plans.
+Changes impacting customers must be communicated in advance where possible.
+
+Unauthorized changes to production systems are not permitted.

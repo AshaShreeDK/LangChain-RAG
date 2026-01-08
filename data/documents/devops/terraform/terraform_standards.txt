@@ -1,0 +1,8 @@
+All infrastructure must be provisioned using Terraform modules.
+Direct resource definitions in production environments are discouraged.
+
+Terraform state files must be stored in a remote backend.
+State locking must be enabled to prevent concurrent modifications.
+
+Changes to infrastructure must go through code review.
+Terraform plans must be reviewed before apply.

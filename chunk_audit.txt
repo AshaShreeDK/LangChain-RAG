@@ -1,0 +1,143 @@
+
+--- Chunk 1 ---
+Customer data must be retained only for the duration required by business and regulatory needs.
+Data retention periods must be documented and approved.
+
+Expired data must be securely deleted.
+Backups must follow the same data retention requirements.
+
+Exceptions to retention policies require formal approval.
+{'source': 'data_retention_policy.txt', 'path': 'policies/data_retention_policy.txt', 'domain': 'documents'}
+
+--- Chunk 2 ---
+Access to production systems must be granted on a need-to-have basis.
+Temporary access must have an expiration date.
+
+All production access must be logged and monitored.
+Shared accounts are strictly prohibited.
+
+Production access reviews must be conducted quarterly.
+{'source': 'production_access_policy.txt', 'path': 'policies/production_access_policy.txt', 'domain': 'documents'}
+
+--- Chunk 3 ---
+All changes to production systems must follow the change management process.
+Emergency changes must be documented and reviewed after implementation.
+
+Change requests must include risk assessment and rollback plans.
+Changes impacting customers must be communicated in advance where possible.
+
+Unauthorized changes to production systems are not permitted.
+{'source': 'change_management_policy.txt', 'path': 'policies/change_management_policy.txt', 'domain': 'documents'}
+
+--- Chunk 4 ---
+EC2 instances used for production workloads must be launched only within approved VPCs.
+Public IP addresses are not permitted unless explicitly approved by the security team.
+
+All EC2 instances must use IAM roles for AWS access.
+The use of long-term access keys on EC2 instances is strictly prohibited.
+{'source': 'ec2_operations.txt', 'path': 'aws/ec2_operations.txt', 'domain': 'documents'}
+
+--- Chunk 5 ---
+All infrastructure must be provisioned using Terraform modules.
+Direct resource definitions in production environments are discouraged.
+
+Terraform state files must be stored in a remote backend.
+State locking must be enabled to prevent concurrent modifications.
+
+Changes to infrastructure must go through code review.
+Terraform plans must be reviewed before apply.
+{'source': 'terraform_standards.txt', 'path': 'devops/terraform/terraform_standards.txt', 'domain': 'devops'}
+
+--- Chunk 6 ---
+All code changes must go through a pull request review process.
+Direct commits to the main branch are not allowed.
+
+CI pipelines must include unit tests and static code analysis.
+Builds that fail quality checks must not be promoted to deployment stages.
+
+Production deployments require manual approval.
+Rollback procedures must be documented for every service.
+{'source': 'ci_cd_pipeline.txt', 'path': 'devops/ci_cd/ci_cd_pipeline.txt', 'domain': 'devops'}
+
+--- Chunk 7 ---
+Docker images must be built using minimal base images.
+Alpine-based images are preferred where possible.
+
+Containers must not run as the root user.
+Secrets must not be stored inside Docker images.
+
+All images must be scanned for vulnerabilities before deployment.
+Only approved container registries may be used in production.
+{'source': 'docker_best_practices.txt', 'path': 'devops/docker/docker_best_practices.txt', 'domain': 'devops'}
+
+--- Chunk 8 ---
+All Kubernetes workloads must define resource requests and limits.
+Pods without resource limits are not permitted in production namespaces.
+
+Liveness and readiness probes must be configured for all services.
+Deployments must use rolling update strategies to avoid downtime.
+
+Secrets must be managed using Kubernetes Secrets or external secret managers.
+Direct embedding of secrets in manifests is prohibited.
+{'source': 'kubernetes_deployment_guidelines.txt', 'path': 'devops/kubernetes/kubernetes_deployment_guidelines.txt', 'domain': 'devops'}
+
+--- Chunk 9 ---
+A Sev-1 incident is defined as a complete service outage impacting customers.
+The on-call engineer must acknowledge a Sev-1 alert within 5 minutes.
+
+During active incidents, status updates must be communicated every 30 minutes.
+Incident mitigation should focus on service restoration before root cause analysis.
+
+A post-incident review must be conducted within 5 business days.
+{'source': 'incident_response_runbook.txt', 'path': 'sre/incidents/incident_response_runbook.txt', 'domain': 'sre'}
+
+--- Chunk 10 ---
+Service Level Objectives (SLOs) must be defined for all customer-facing services.
+Service Level Agreements (SLAs) must align with defined SLOs.
+
+Error budgets must be tracked and reviewed regularly.
+Exceeding error budgets requires prioritization of reliability improvements.
+
+SLA breaches must be reported to stakeholders promptly.
+{'source': 'sla_slo_policy.txt', 'path': 'sre/sla_slo/sla_slo_policy.txt', 'domain': 'sre'}
+
+--- Chunk 11 ---
+Critical services must have alerts configured for availability and latency.
+Alert thresholds must be reviewed periodically to avoid alert fatigue.
+
+Monitoring dashboards must be accessible to on-call engineers.
+Alerts should include clear runbook links where applicable.
+
+Silencing alerts without incident tracking is not permitted.
+{'source': 'monitoring_alert_guidelines.txt', 'path': 'sre/monitoring/monitoring_alert_guidelines.txt', 'domain': 'sre'}
+
+--- Chunk 12 ---
+IAM users must not be created for applications.
+All applications must use IAM roles for authentication.
+
+The principle of least privilege must be followed for all IAM policies.
+Wildcard permissions are not allowed in production environments.
+
+MFA is mandatory for all human users with console access.
+Access reviews must be conducted quarterly.
+{'source': 'iam_access_policy.txt', 'path': 'security/iam/iam_access_policy.txt', 'domain': 'security'}
+
+--- Chunk 13 ---
+All systems must comply with internal security standards and regulatory requirements.
+Production systems must undergo regular vulnerability assessments.
+
+Security patches must be applied within defined SLA timelines.
+Audit logs must be retained according to the data retention policy.
+
+Non-compliant systems must be remediated promptly or decommissioned.
+{'source': 'security_compliance_guidelines.txt', 'path': 'security/compliance/security_compliance_guidelines.txt', 'domain': 'security'}
+
+--- Chunk 14 ---
+Secrets must be stored in approved secrets management systems.
+Plaintext secrets must not be stored in source code repositories.
+
+Secrets rotation must be automated wherever possible.
+Access to secrets must be logged and monitored.
+
+Sharing secrets via email or chat tools is strictly prohibited.
+{'source': 'secrets_management_policy.txt', 'path': 'security/secrets/secrets_management_policy.txt', 'domain': 'security'}

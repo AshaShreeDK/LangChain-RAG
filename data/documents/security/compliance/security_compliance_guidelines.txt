@@ -1,0 +1,7 @@
+All systems must comply with internal security standards and regulatory requirements.
+Production systems must undergo regular vulnerability assessments.
+
+Security patches must be applied within defined SLA timelines.
+Audit logs must be retained according to the data retention policy.
+
+Non-compliant systems must be remediated promptly or decommissioned.

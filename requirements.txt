@@ -1,0 +1,14 @@
+google-genai
+python-dotenv
+groq
+langchain
+langchain-groq
+streamlit
+openai
+langchain-openai
+langchain-huggingface
+sentence-transformers
+langchain-community
+langchain-text-splitters
+faiss-cpu
+pathlib

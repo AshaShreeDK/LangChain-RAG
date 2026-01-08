@@ -1,0 +1,8 @@
+Docker images must be built using minimal base images.
+Alpine-based images are preferred where possible.
+
+Containers must not run as the root user.
+Secrets must not be stored inside Docker images.
+
+All images must be scanned for vulnerabilities before deployment.
+Only approved container registries may be used in production.

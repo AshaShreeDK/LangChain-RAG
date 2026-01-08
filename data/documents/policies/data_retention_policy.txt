@@ -1,0 +1,7 @@
+Customer data must be retained only for the duration required by business and regulatory needs.
+Data retention periods must be documented and approved.
+
+Expired data must be securely deleted.
+Backups must follow the same data retention requirements.
+
+Exceptions to retention policies require formal approval.

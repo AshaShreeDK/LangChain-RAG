@@ -1,0 +1,5 @@
+EC2 instances used for production workloads must be launched only within approved VPCs.
+Public IP addresses are not permitted unless explicitly approved by the security team.
+
+All EC2 instances must use IAM roles for AWS access.
+The use of long-term access keys on EC2 instances is strictly prohibited.

@@ -1,0 +1,8 @@
+All code changes must go through a pull request review process.
+Direct commits to the main branch are not allowed.
+
+CI pipelines must include unit tests and static code analysis.
+Builds that fail quality checks must not be promoted to deployment stages.
+
+Production deployments require manual approval.
+Rollback procedures must be documented for every service.
